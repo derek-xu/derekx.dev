@@ -34,19 +34,23 @@ export default function HomePage() {
         </li>
       </ul>
 
-      <h4>COOL THINGS I'VE BUILT:</h4>
+      {/* <h4>COOL THINGS I'VE BUILT:</h4>
 
       <ul>
         <li>this little website</li>
       </ul>
 
-      <h4>DIRECTORY:</h4>
+      <h4>DIRECTORY:</h4> */}
 
+      {/* 
       <ul>
         <li>
           <a href="/contact">contact</a>
         </li>
-      </ul>
+      </ul> */}
+      <br />
+      <br />
+      <p>More to come soon ...</p>
     </div>
   );
 }
