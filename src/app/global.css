@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "./animations.css";
+
+@theme {
+  --color-custom: #6d28d9;
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.141 0.005 285.823);
+  --color-primary: oklch(0.21 0.006 285.885);
+  --color-primary-foreground: oklch(0.985 0 0);
+  --color-secondary: oklch(0.967 0.001 286.375);
+  --color-secondary-foreground: oklch(0.21 0.006 285.885);
+  --color-muted: oklch(0.967 0.001 286.375);
+  --color-muted-foreground: oklch(0.552 0.016 285.938);
+  --color-accent: oklch(0.967 0.001 286.375);
+  --color-accent-foreground: oklch(0.21 0.006 285.885);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-border: oklch(0.92 0.004 286.32);
+  --color-input: oklch(0.92 0.004 286.32);
+  --color-ring: oklch(0.705 0.015 286.067);
+
+  --font-family-inter: Inter, sans-serif;
+  --font-family-mono: "JetBrains Mono", monospace;
+  --font-family-major: "Major Mono Display", monospace;
+}
+
+@layer base {
+  body {
+    background-color: theme(--color-background);
+    color: theme(--color-foreground);
+    font-family: theme(--font-family-mono);
+  }
+
+  ::selection {
+    background-color: theme(--color-custom / 0.5);
+  }
+
+  ::-moz-selection {
+    background-color: theme(--color-custom / 0.5);
+  }
+}
+
+@layer components {
+  /* Custom heading styles since prose isn't working */
+  h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-custom);
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    font-family: theme(--font-family-major);
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Paragraph spacing */
+  p {
+    margin-bottom: 1rem;
+    line-height: 2.5;
+  }
+
+  /* List styling */
+  ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 1.5rem;
+    margin-left: 0;
+  }
+
+  li {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  @media (min-width: 640px) {
+    li {
+      font-size: 0.875rem;
+    }
+  }
+
+  /* Link styling */
+  a {
+    color: var(--color-custom);
+    text-decoration: underline;
+  }
+}

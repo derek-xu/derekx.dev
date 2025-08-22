@@ -1,0 +1,214 @@
+/* Detailed caret roll-in animation with 2% increments for smooth motion */
+@keyframes caret-roll-in-detailed {
+  0% {
+    opacity: 0;
+    transform: translateX(150px) rotate(360deg);
+  }
+  2% {
+    opacity: 0.04;
+    transform: translateX(147px) rotate(352.8deg);
+  }
+  4% {
+    opacity: 0.08;
+    transform: translateX(144px) rotate(345.6deg);
+  }
+  6% {
+    opacity: 0.12;
+    transform: translateX(141px) rotate(338.4deg);
+  }
+  8% {
+    opacity: 0.16;
+    transform: translateX(138px) rotate(331.2deg);
+  }
+  10% {
+    opacity: 0.2;
+    transform: translateX(135px) rotate(324deg);
+  }
+  12% {
+    opacity: 0.24;
+    transform: translateX(132px) rotate(316.8deg);
+  }
+  14% {
+    opacity: 0.28;
+    transform: translateX(129px) rotate(309.6deg);
+  }
+  16% {
+    opacity: 0.32;
+    transform: translateX(126px) rotate(302.4deg);
+  }
+  18% {
+    opacity: 0.36;
+    transform: translateX(123px) rotate(295.2deg);
+  }
+  20% {
+    opacity: 0.4;
+    transform: translateX(120px) rotate(288deg);
+  }
+  22% {
+    opacity: 0.44;
+    transform: translateX(117px) rotate(280.8deg);
+  }
+  24% {
+    opacity: 0.48;
+    transform: translateX(114px) rotate(273.6deg);
+  }
+  26% {
+    opacity: 0.52;
+    transform: translateX(111px) rotate(266.4deg);
+  }
+  28% {
+    opacity: 0.56;
+    transform: translateX(108px) rotate(259.2deg);
+  }
+  30% {
+    opacity: 0.6;
+    transform: translateX(105px) rotate(252deg);
+  }
+  32% {
+    opacity: 0.64;
+    transform: translateX(102px) rotate(244.8deg);
+  }
+  34% {
+    opacity: 0.68;
+    transform: translateX(99px) rotate(237.6deg);
+  }
+  36% {
+    opacity: 0.72;
+    transform: translateX(96px) rotate(230.4deg);
+  }
+  38% {
+    opacity: 0.76;
+    transform: translateX(93px) rotate(223.2deg);
+  }
+  40% {
+    opacity: 0.8;
+    transform: translateX(90px) rotate(216deg);
+  }
+  42% {
+    opacity: 0.84;
+    transform: translateX(87px) rotate(208.8deg);
+  }
+  44% {
+    opacity: 0.88;
+    transform: translateX(84px) rotate(201.6deg);
+  }
+  46% {
+    opacity: 0.92;
+    transform: translateX(81px) rotate(194.4deg);
+  }
+  48% {
+    opacity: 0.96;
+    transform: translateX(78px) rotate(187.2deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(75px) rotate(180deg);
+  }
+  52% {
+    opacity: 1;
+    transform: translateX(72px) rotate(172.8deg);
+  }
+  54% {
+    opacity: 1;
+    transform: translateX(69px) rotate(165.6deg);
+  }
+  56% {
+    opacity: 1;
+    transform: translateX(66px) rotate(158.4deg);
+  }
+  58% {
+    opacity: 1;
+    transform: translateX(63px) rotate(151.2deg);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(60px) rotate(144deg);
+  }
+  62% {
+    opacity: 1;
+    transform: translateX(57px) rotate(136.8deg);
+  }
+  64% {
+    opacity: 1;
+    transform: translateX(54px) rotate(129.6deg);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(51px) rotate(122.4deg);
+  }
+  68% {
+    opacity: 1;
+    transform: translateX(48px) rotate(115.2deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(45px) rotate(108deg);
+  }
+  72% {
+    opacity: 1;
+    transform: translateX(42px) rotate(100.8deg);
+  }
+  74% {
+    opacity: 1;
+    transform: translateX(39px) rotate(93.6deg);
+  }
+  76% {
+    opacity: 1;
+    transform: translateX(36px) rotate(86.4deg);
+  }
+  78% {
+    opacity: 1;
+    transform: translateX(33px) rotate(79.2deg);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(30px) rotate(72deg);
+  }
+  82% {
+    opacity: 1;
+    transform: translateX(27px) rotate(64.8deg);
+  }
+  84% {
+    opacity: 1;
+    transform: translateX(24px) rotate(57.6deg);
+  }
+  86% {
+    opacity: 1;
+    transform: translateX(21px) rotate(50.4deg);
+  }
+  88% {
+    opacity: 1;
+    transform: translateX(18px) rotate(43.2deg);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(15px) rotate(36deg);
+  }
+  92% {
+    opacity: 1;
+    transform: translateX(12px) rotate(28.8deg);
+  }
+  94% {
+    opacity: 1;
+    transform: translateX(9px) rotate(21.6deg);
+  }
+  96% {
+    opacity: 1;
+    transform: translateX(6px) rotate(14.4deg);
+  }
+  98% {
+    opacity: 1;
+    transform: translateX(3px) rotate(7.2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+/* Apply the detailed animation */
+.animate-caret-blink {
+  animation: caret-roll-in-detailed 2.5s ease-in-out forwards;
+  display: inline-block;
+  will-change: transform, opacity;
+}
