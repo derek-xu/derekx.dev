@@ -1,9 +1,7 @@
 export default function HomePage() {
   return (
     <div>
-      <h2>
-        HELLO, I'M DEREK<span className="animate-caret-blink">.</span>
-      </h2>
+      <h2>HELLO, I'M DEREK.</h2>
 
       <p>
         i'm 20 years old, from{" "}
