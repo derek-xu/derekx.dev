@@ -14,7 +14,7 @@ export default function Footer() {
         <p>
           MADE BY{" "}
           <a
-            //href="https://dris.one"
+            href="https://derekx.dev"
             target="_blank"
             rel="noreferrer"
             className="underline"
