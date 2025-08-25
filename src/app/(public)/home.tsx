@@ -4,9 +4,9 @@ export default function HomePage() {
       <h2>HELLO, I'M DEREK.</h2>
 
       <p>
-        i'm 20 years old, from{" "}
+        i'm a software engineer from{" "}
         <a href="https://maps.app.goo.gl/moffoZtjTWoZZeXS8">toronto</a>. <br />i
-        study computer science @ the university of waterloo
+        study computer science @ the university of waterloo.
       </p>
 
       <h4>WHERE I'VE WORKED:</h4>
