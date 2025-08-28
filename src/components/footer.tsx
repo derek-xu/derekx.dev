@@ -1,4 +1,4 @@
-import { ArrowUpIcon } from "@radix-ui/react-icons";
+//import { ArrowUpIcon } from "@radix-ui/react-icons";
 
 export default function Footer() {
   return (
