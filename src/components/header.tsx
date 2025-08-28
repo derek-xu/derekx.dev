@@ -20,13 +20,14 @@ export default function Header() {
         }}
       />
       <div className="flex items-center gap-2 underline text-sm">
-        {Object.entries(config.HEADER as Record<string, string>).map(
-          ([key, value]) => (
-            <a href={value} target="_blank" rel="noreferrer" key={key}>
-              {key.toUpperCase()}
-            </a>
-          )
-        )}
+        {/* Explicit links to control routing vs external */}
+        <a href={config.HEADER.contact}>CONTACT</a>
+        <a href={config.HEADER.linkedin} target="_blank" rel="noreferrer">
+          LINKEDIN
+        </a>
+        <a href={config.HEADER.github} target="_blank" rel="noreferrer">
+          GITHUB
+        </a>
       </div>
     </header>
   );
