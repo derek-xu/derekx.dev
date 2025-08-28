@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./animations.css";
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
 
 @theme {
   --color-custom: #6d28d9;
@@ -21,6 +22,7 @@
   --font-family-inter: Inter, sans-serif;
   --font-family-mono: "JetBrains Mono", monospace;
   --font-family-major: "Major Mono Display", monospace;
+  --font-family-writing: "Coming Soon", cursive;
 }
 
 @layer base {
@@ -52,14 +54,16 @@
 
   h4 {
     font-size: 1.125rem;
-    font-weight: 600;
-    color: #374151;
+    font-family: theme(--font-family-writing);
+    font-weight: 1000;
     margin-bottom: 0.75rem;
     margin-top: 1.5rem;
   }
 
   /* Paragraph spacing */
   p {
+    font-family: theme(--font-family-writing);
+    font-size: 1rem;
     margin-bottom: 1rem;
     line-height: 2.5;
   }
@@ -73,7 +77,7 @@
   }
 
   li {
-    font-family: "JetBrains Mono", monospace;
+    font-family: theme(--font-family-writing);
     font-size: 0.75rem;
     margin-bottom: 0.5rem;
     padding-left: 0.5rem;
@@ -81,7 +85,7 @@
 
   @media (min-width: 640px) {
     li {
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
   }
 
